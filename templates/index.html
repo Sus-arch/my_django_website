@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% load static %}
+    <div class="h1 text-center">Обо мне</div>
+    <div class="container-fluid">
+        <h4>
+            <img src="{% static "img/my_photo.jpg"%}" class="img-fluid" alt="Тут должна была быть моя фотография, но что-то пошло не так">
+            Меня зовут Андрей Харин. Мне 17 лет и я живу в городе <a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA" target="_blank">Архангельск.</a>
+        </h4>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <h4>Мои увлечения:</h4>
+        <ul class="list-group">
+            <li class="list-group-item">Программирование (Python, C++)</li>
+            <li class="list-group-item">Изучаю немецкий язык (На пути к C1, на данный момент B1)</li>
+            <li class="list-group-item">Играю на гитаре</li>
+            <li class="list-group-item">Читаю книги</li>
+            <li class="list-group-item">Люблю путешествовать</li>
+        </ul>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <h4>Опыт в программировании:</h4>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Прошёл обучение в Яндекс Лицее
+                <a class="navbar-brand" href="https://lyceum.yandex.ru/certificate/check/?certNumber=220242437&lastName=%D0%A5%D0%B0%D1%80%D0%B8%D0%BD" target="_blank">(Сертификат)</a></li>
+            <li class="list-group-item">Опыт в создании вебсайтов на Flask
+            <a class="navbar-brand" href="https://github.com/Sus-arch/mission_kulture" target="_blank">(github-репозиторий с сайтом про памятные места в РФ, </a>
+            <a class="navbar-brand" href="https://github.com/Sus-arch/WebProject" target="_blank">github-репозиторий с сайтом наподобие Twitter)</a></li>
+            <li class="list-group-item">Создаю телеграмм ботов
+            <a class="navbar-brand" href="https://github.com/Sus-arch/TelegramBot" target="_blank">(github-репозиторий с ботом)</a></li>
+            <li class="list-group-item">2 место в хакатоне "Миссия: культурное наследие"</li>
+            <li class="list-group-item">Учавствовал во всероссийском творческом конкурсе "IT-РИНГ" по направлению «программирование»</li>
+        </ul>
+    </div>
+    <br>
+{% endblock %}
